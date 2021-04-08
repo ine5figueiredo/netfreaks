@@ -2,12 +2,14 @@ package org.academiadecodigo;
 
 
 import org.academiadecodigo.model.Profile;
+import org.academiadecodigo.model.ProfilesBootstrap;
 
 public class Main {
 
     public static void main(String[] args) {
-
-        Profile p1 = new Profile();
+        ProfilesBootstrap profilesBootstrap = new ProfilesBootstrap();
+        profilesBootstrap.getProfilesList().stream().forEach(i -> System.out.println(i.getFreakAname()));
+        
 
     }
 }
