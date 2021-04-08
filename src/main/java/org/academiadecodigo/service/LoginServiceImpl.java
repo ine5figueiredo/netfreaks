@@ -2,9 +2,10 @@ package org.academiadecodigo.service;
 
 import org.academiadecodigo.model.User;
 import org.academiadecodigo.model.ProfilesBootstrap;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class LoginServiceImpl implements LoginService {
 
     private User currentFreak;
