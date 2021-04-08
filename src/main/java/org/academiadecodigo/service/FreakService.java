@@ -1,4 +1,4 @@
-package service;
+package org.academiadecodigo.service;
 
 public interface FreakService {
 }

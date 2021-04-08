@@ -1,6 +1,7 @@
-package service;
+package org.academiadecodigo.service;
 
-import model.Profile;
+
+import org.academiadecodigo.model.Profile;
 
 public interface MatchService {
 

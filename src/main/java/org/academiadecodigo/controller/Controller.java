@@ -1,4 +1,4 @@
-package controller;
+package org.academiadecodigo.controller;
 
 public interface Controller {
 

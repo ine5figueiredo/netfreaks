@@ -1,6 +1,7 @@
-package controller;
+package org.academiadecodigo.controller;
 
-import service.FreakService;
+
+import org.academiadecodigo.service.FreakService;
 
 public class RestFreakController {
 

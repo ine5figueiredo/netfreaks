@@ -1,4 +1,7 @@
-import model.Profile;
+package org.academiadecodigo;
+
+
+import org.academiadecodigo.model.Profile;
 
 public class Main {
 
