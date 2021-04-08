@@ -5,17 +5,17 @@ import java.util.List;
 
 public class ProfilesBootstrap {
 
-    private static List<Profile> profilesList;
+    private static List<User> profilesList;
 
-    public List<Profile> getProfilesList() {
+    public List<User> getProfilesList() {
         return profilesList;
     }
 
     public ProfilesBootstrap() {
         profilesList = new LinkedList<>();
 
-        Profile p1 = new Profile();
-        p1.setFreakAname("luigi");
+        User p1 = new User();
+        p1.setUsername("luigi");
         p1.setName("Luigi Mario");
         p1.setAge(31);
         p1.setPassword("iamluigi");
@@ -27,10 +27,10 @@ public class ProfilesBootstrap {
                 "Ready to jump over any freaky obstacles together!");
         p1.addTurnoff("Comic Sans");
         p1.addTurnoff("overachievers");
-        p1.setFreakaRating(3.4);
+        p1.setRating(3.4);
 
-        Profile p2 = new Profile();
-        p2.setFreakAname("freakazoid");
+        User p2 = new User();
+        p2.setUsername("freakazoid");
         p2.setName("Freako Peaky");
         p2.setAge(16);
         p2.setAboutMe("I am a crazy person and right now you witness my best personality!\n" +
@@ -41,7 +41,7 @@ public class ProfilesBootstrap {
         p2.addKink("electrocuting fish");
         p2.addTurnoff("whiners");
         p2.addTurnoff("normality");
-        p2.setFreakaRating(5);
+        p2.setRating(5);
 
         profilesList.add(p1);
         profilesList.add(p2);

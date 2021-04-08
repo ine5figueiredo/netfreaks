@@ -1,7 +1,7 @@
 package org.academiadecodigo.service;
 
 
-import org.academiadecodigo.model.Profile;
+import org.academiadecodigo.model.User;
 
 public class MatchServiceImpl implements MatchService {
 
@@ -16,7 +16,7 @@ public class MatchServiceImpl implements MatchService {
     }
 
     @Override
-    public void createMatch(Profile receivedLike) {
+    public void createMatch(User receivedLike) {
         loginService.getCurrentUser().addLike(receivedLike);
         if (receivedLike.getLikes().contains(loginService.getCurrentUser())) {
             createMutualMatch(receivedLike);
@@ -25,8 +25,8 @@ public class MatchServiceImpl implements MatchService {
     }
 
     @Override
-    public void createMutualMatch(Profile profile2) {
-        loginService.getCurrentUser().addMatch(profile2);
-        profile2.addMatch(loginService.getCurrentUser());
+    public void createMutualMatch(User user2) {
+        loginService.getCurrentUser().addMatch(user2);
+        user2.addMatch(loginService.getCurrentUser());
     }
 }

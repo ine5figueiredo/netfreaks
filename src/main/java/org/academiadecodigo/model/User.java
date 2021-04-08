@@ -5,31 +5,31 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public class Profile {
+public class User {
 
-    private String freakAname;
+    private String username;
     private String password;
-    private String location;
     private String name;
     private int age;
-    private Set<String> kinks = new HashSet<>();
-    private Set<String> turnOffs = new HashSet<>();
+    private String location;
     private String picture;
     private String aboutMe;
-    private List<Profile> likes = new LinkedList<>();
-    private List<Profile> matches = new LinkedList<>();
-    private double freakaRating;
+    private double rating;
+    private Set<String> kinks = new HashSet<>();
+    private Set<String> turnOffs = new HashSet<>();
+    private List<User> likes = new LinkedList<>();
+    private List<User> matches = new LinkedList<>();
 
-    public double getFreakaRating() {
-        return freakaRating;
+    public double getRating() {
+        return rating;
     }
 
-    public void setFreakaRating(double freakaRating) {
-        this.freakaRating = freakaRating;
+    public void setRating(double rating) {
+        this.rating = rating;
     }
 
-    public String getFreakAname() {
-        return freakAname;
+    public String getUsername() {
+        return username;
     }
 
     public String getPassword() {
@@ -64,12 +64,12 @@ public class Profile {
         return matches;
     }
 
-    public List<Profile> getLikes() {
+    public List<User> getLikes() {
         return likes;
     }
 
-    public void setFreakAname(String freakAname) {
-        this.freakAname = freakAname;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public void setPassword(String password) {
@@ -92,12 +92,12 @@ public class Profile {
         this.picture = picture;
     }
 
-    public void addLike(Profile profile) {
-        likes.add(profile);
+    public void addLike(User user) {
+        likes.add(user);
     }
 
-    public void addMatch(Profile profile) {
-        matches.add(profile);
+    public void addMatch(User user) {
+        matches.add(user);
     }
 
     public void addKink(String kink) {

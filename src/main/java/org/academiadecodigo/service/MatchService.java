@@ -1,11 +1,11 @@
 package org.academiadecodigo.service;
 
 
-import org.academiadecodigo.model.Profile;
+import org.academiadecodigo.model.User;
 
 public interface MatchService {
 
-    void createMatch(Profile receivedLike);
+    void createMatch(User receivedLike);
 
-    void createMutualMatch(Profile profile2);
+    void createMutualMatch(User user2);
 }
