@@ -1,5 +1,8 @@
 package org.academiadecodigo.command;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class UserDto {
 
     private String username;

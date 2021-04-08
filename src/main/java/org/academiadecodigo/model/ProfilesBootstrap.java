@@ -3,6 +3,7 @@ package org.academiadecodigo.model;
 import java.util.LinkedList;
 import java.util.List;
 
+
 public class ProfilesBootstrap {
 
     private static List<User> profilesList;

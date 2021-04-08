@@ -2,6 +2,7 @@ package org.academiadecodigo.service;
 
 
 import org.academiadecodigo.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class MatchServiceImpl implements MatchService {
 
@@ -11,6 +12,7 @@ public class MatchServiceImpl implements MatchService {
         return loginService;
     }
 
+    @Autowired
     public void setLoginService(LoginService loginService) {
         this.loginService = loginService;
     }

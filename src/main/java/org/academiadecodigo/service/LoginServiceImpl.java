@@ -5,6 +5,7 @@ import org.academiadecodigo.model.ProfilesBootstrap;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 public class LoginServiceImpl implements LoginService {
 
@@ -14,14 +15,6 @@ public class LoginServiceImpl implements LoginService {
     public LoginServiceImpl() {
         ProfilesBootstrap profilesBootstrap = new ProfilesBootstrap();
         usersList = profilesBootstrap.getProfilesList();
-    }
-
-    public void setUsersList(List<User> usersList) {
-        this.usersList = usersList;
-    }
-
-    public User getCurrentFreak() {
-        return currentFreak;
     }
 
     @Override

@@ -1,16 +1,18 @@
 package org.academiadecodigo.service;
 
 import org.academiadecodigo.model.User;
-import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserServiceImpl implements UserService{
 
     private LoginService loginService;
 
+    @Autowired
     public void setLoginService(LoginService loginService) {
         this.loginService = loginService;
     }
-
 
     @Override
     public User add(User user) {
