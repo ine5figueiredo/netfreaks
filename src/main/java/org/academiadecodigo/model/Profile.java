@@ -1,5 +1,7 @@
-package model;
+package org.academiadecodigo.model;
 
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -10,11 +12,21 @@ public class Profile {
     private String location;
     private String name;
     private int age;
-    private Set<String> kinks;
-    private Set<String> turnOffs;
+    private Set<String> kinks = new HashSet<>();
+    private Set<String> turnOffs = new HashSet<>();
     private String picture;
-    private List<Profile> likes;
-    private List<Profile> matches;
+    private String aboutMe;
+    private List<Profile> likes = new LinkedList<>();
+    private List<Profile> matches = new LinkedList<>();
+    private double freakaRating;
+
+    public double getFreakaRating() {
+        return freakaRating;
+    }
+
+    public void setFreakaRating(double freakaRating) {
+        this.freakaRating = freakaRating;
+    }
 
     public String getFreakAname() {
         return freakAname;
@@ -50,6 +62,10 @@ public class Profile {
 
     public List getMatches() {
         return matches;
+    }
+
+    public List<Profile> getLikes() {
+        return likes;
     }
 
     public void setFreakAname(String freakAname) {
@@ -91,4 +107,13 @@ public class Profile {
     public void addTurnoff(String turnoff) {
         turnOffs.add(turnoff);
     }
+
+    public String getAboutMe() {
+        return aboutMe;
+    }
+
+    public void setAboutMe(String aboutMe) {
+        this.aboutMe = aboutMe;
+    }
+
 }

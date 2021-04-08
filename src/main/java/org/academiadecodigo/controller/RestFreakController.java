@@ -1,6 +1,5 @@
 package org.academiadecodigo.controller;
 
-import org.academiadecodigo.command.FreakDTO;
 import org.academiadecodigo.converters.FreakDTOToFreak;
 import org.academiadecodigo.converters.FreakToFreakDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import service.FreakService;
-
+import org.academiadecodigo.service.FreakService;
 import java.util.List;
 
 @RestController
@@ -33,10 +31,5 @@ public class RestFreakController {
     @Autowired
     public void setFreakToFreakDTO(FreakToFreakDTO freakToFreakDTO) {
         this.freakToFreakDTO = freakToFreakDTO;
-    }
-
-    @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
-    public ResponseEntity<List> homePage() {
-        List<FreakDTO> freakDTOList =
     }
 }

@@ -1,6 +1,6 @@
 package org.academiadecodigo.command;
 
-import model.Profile;
+import org.academiadecodigo.model.Profile;
 
 import java.util.List;
 import java.util.Set;
@@ -15,8 +15,8 @@ public class UserDTO {
     private Set<String> kinks;
     private Set<String> turnOffs;
     private String picture;
-    private List<model.Profile> likes;
-    private List<model.Profile> matches;
+    private List<Profile> likes;
+    private List<Profile> matches;
 
     public String getFreakAname() {
         return freakAname;
