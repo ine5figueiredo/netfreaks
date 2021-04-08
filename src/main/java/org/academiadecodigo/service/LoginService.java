@@ -8,4 +8,6 @@ public interface LoginService {
 
     Profile getCurrentUser();
 
+    void logout();
+
 }

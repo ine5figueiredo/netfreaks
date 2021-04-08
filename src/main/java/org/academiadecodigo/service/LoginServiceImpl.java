@@ -40,4 +40,11 @@ public class LoginServiceImpl implements LoginService {
     public Profile getCurrentUser() {
         return currentFreak;
     }
+
+    @Override
+    public void logout() {
+        currentFreak = null;
+    }
+
+
 }
