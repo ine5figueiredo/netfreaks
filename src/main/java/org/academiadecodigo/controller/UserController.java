@@ -37,8 +37,8 @@ public class UserController {
     @RequestMapping(method = RequestMethod.GET, path = {"/feed/{username}"})
     public ResponseEntity<List<UserDto>> feed(@PathVariable String username) {
 
-        if (!loginService.getCurrentUser().getUsername().equals(username)) {
-            new ResponseEntity(HttpStatus.BAD_REQUEST);
+        if (loginService.getCurrentUser() == null || !loginService.getCurrentUser().getUsername().equals(username)) {
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 
         List<UserDto> userDtoList = loginService.getUserList().stream().map(user -> userToUserDTO.convert(user))
@@ -51,7 +51,7 @@ public class UserController {
     public ResponseEntity<UserDto> profilePage(@PathVariable String username) {
 
         if (loginService.getCurrentUser() == null || !loginService.getCurrentUser().getUsername().equals(username)) {
-            new ResponseEntity(HttpStatus.BAD_REQUEST);
+           return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 
         UserDto userDto = userToUserDTO.convert(userService.getUser(username));
