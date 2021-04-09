@@ -20,7 +20,7 @@ public class ProfilesBootstrap {
         p1.setName("Tiburcio");
         p1.setAge(35);
         p1.setPassword("amen-1");
-        p1.setPicture("");
+        p1.setPicture("https://funkyimg.com/i/3bM9A.jpg");
         p1.setLocation("");
         p1.setAboutMe("I am the unfortunate underdog looking for my freaky soulmate. \n" +
                 "Ready to jump over any freaky obstacles together!");
@@ -36,7 +36,7 @@ public class ProfilesBootstrap {
         p2.setName("Tino de Rã");
         p2.setAge(28);
         p2.setPassword("amen-2");
-        p2.setPicture("");
+        p2.setPicture("https://funkyimg.com/i/3bM9s.jpg");
         p2.setLocation("");
         p2.setAboutMe("I am a crazy person and right now you witness my best personality!\n" +
                 "The upside is: you never get bored of me. The downside: I will probably ruin your life.\n" +
@@ -53,7 +53,7 @@ public class ProfilesBootstrap {
         p3.setName("Cornelia");
         p3.setAge(52);
         p3.setPassword("amen-3");
-        p3.setPicture("");
+        p3.setPicture("https://funkyimg.com/i/3bM9r.jpg");
         p3.setLocation("");
         p3.setAboutMe("Hey there Freakies. I'm looking for my freaky<partner> of crime to do a lot exciting and irresponsivel shit. MUAHAHAHAH. " +
                 "If you are not freaky enough don´t bother because I am the freakiest of them all!!! ");
@@ -69,7 +69,7 @@ public class ProfilesBootstrap {
         p4.setName("Bonifacio");
         p4.setAge(23);
         p4.setPassword("amen-4");
-        p4.setPicture("");
+        p4.setPicture("https://funkyimg.com/i/3bM9q.jpg");
         p4.setLocation("");
         p4.setAboutMe("Hello my name is Bonifacio but you can call me Boni. I'm looking for someone to go with me on a " +
                 "downhill cheese-chase, because running after a yellow ball of fermented milk is great, but doing it with " +
@@ -86,7 +86,7 @@ public class ProfilesBootstrap {
         p5.setName("Maria");
         p5.setAge(30);
         p5.setPassword("amen-5");
-        p5.setPicture("");
+        p5.setPicture("https://funkyimg.com/i/3bM9p.jpg");
         p5.setLocation("");
         p5.setAboutMe("I am highly spiritual but my friends call me crazy. If you want to call me a freak, message RIGHT NOW! I won't be on this astral plane forever!");
         p5.addKink("Changing sugar for salt");
@@ -101,7 +101,7 @@ public class ProfilesBootstrap {
         p6.setName("Pedro");
         p6.setAge(24);
         p6.setPassword("amen-6");
-        p6.setPicture("");
+        p6.setPicture("https://funkyimg.com/i/3bM9U.jpg");
         p6.setLocation("");
         p6.setAboutMe("Brace yourself, for I am your shooting star from outer space! \"Wait, really from outer space?!\" \n" +
                 "Yes, match with me and give me a bouquet of kittens to talk more about the underwear fashion on Mars " +
@@ -118,7 +118,7 @@ public class ProfilesBootstrap {
         p7.setName("Anna");
         p7.setAge(70);
         p7.setPassword("amen-7");
-        p7.setPicture("");
+        p7.setPicture("https://funkyimg.com/i/3bM9W.jpg");
         p7.setLocation("");
         p7.setAboutMe("A lady completely not associated with any Russian intelligence " +
                 "services is looking for a remote stalker that would be willing to earn extra cash iykwim.");
@@ -134,7 +134,7 @@ public class ProfilesBootstrap {
         p8.setName("Sara");
         p8.setAge(100);
         p8.setPassword("amen-8");
-        p8.setPicture("");
+        p8.setPicture("https://funkyimg.com/i/3bM9V.jpg");
         p8.setLocation("");
         p8.setAboutMe("I am vampire and really sleepy. If you are willing to donate blood, please come, I just can't make an effort anymore without caffeine.");
         p8.addKink("Stay stuck in traffic");
@@ -149,7 +149,7 @@ public class ProfilesBootstrap {
         p9.setName("Inês");
         p9.setAge(15);
         p9.setPassword("amen-9");
-        p9.setPicture("");
+        p9.setPicture("https://funkyimg.com/i/3bM9T.jpg");
         p9.setLocation("");
         p9.setAboutMe("Teenage girl with a dark secret. Could you ever imagine that this sweet face belongs to a notorious stalker? Have a stalky night, byee!");
         p9.addKink("King size lolipups");
