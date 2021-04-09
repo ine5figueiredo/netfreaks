@@ -13,6 +13,24 @@ public class UserDto {
     private String picture;
     private String aboutMe;
     private double rating;
+    private String kinks;
+    private String turnoffs;
+
+    public String getKinks() {
+        return kinks;
+    }
+
+    public void setKinks(String kinks) {
+        this.kinks = kinks;
+    }
+
+    public String getTurnoffs() {
+        return turnoffs;
+    }
+
+    public void setTurnoffs(String turnoffs) {
+        this.turnoffs = turnoffs;
+    }
 
     public String getUsername() {
         return username;

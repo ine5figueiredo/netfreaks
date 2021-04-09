@@ -28,6 +28,8 @@ public class UserToUserDTO extends AbstractConverter<User, UserDto> {
         userDto.setPicture(user.getPicture());
         userDto.setAboutMe(user.getAboutMe());
         userDto.setRating(user.getRating());
+        userDto.setKinks(user.getKinks().toString());
+        userDto.setTurnoffs(user.getTurnOffs().toString());
 
         return userDto;
     }
