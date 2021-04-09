@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/home")
+@RequestMapping("netfreaks.herokuapp.com")
 public class HomeController {
 
     private LoginService loginService;
@@ -19,12 +19,12 @@ public class HomeController {
         this.loginService = loginService;
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = {"", "/"})
+    @RequestMapping(method = RequestMethod.GET, path = {"", "/", "/home"})
     public ResponseEntity homePage() {
         return new ResponseEntity(HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = {"/login"})
+    @RequestMapping(method = RequestMethod.GET, path = {"/home/login"})
     public ResponseEntity doLogIn(@RequestBody SignInDto signInDto) {
 
         boolean authenticate = loginService.authenticate(signInDto.getUsername(), signInDto.getPassword());
