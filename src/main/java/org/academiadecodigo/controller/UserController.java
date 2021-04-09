@@ -34,12 +34,8 @@ public class UserController {
         this.loginService = loginService;
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = {"/feed/{username}"})
-    public ResponseEntity<List<UserDto>> feed(@PathVariable String username) {
-
-        if (loginService.getCurrentUser() == null || !loginService.getCurrentUser().getUsername().equals(username)) {
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
-        }
+    @RequestMapping(method = RequestMethod.GET, path = {"/feed/"})
+    public ResponseEntity<List<UserDto>> feed() {
 
         List<UserDto> userDtoList = loginService.getUserList().stream().map(user -> userToUserDTO.convert(user))
                 .collect(Collectors.toList());
