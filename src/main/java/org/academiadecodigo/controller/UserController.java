@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("home")
+@RequestMapping("/home")
 public class UserController {
 
     private LoginService loginService;
@@ -47,7 +47,7 @@ public class UserController {
         return new ResponseEntity(userDtoList, HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = {"/{username}/", "/{username"})
+    @RequestMapping(method = RequestMethod.GET, path = {"/{username}/", "/{username}"})
     public ResponseEntity<UserDto> profilePage(@PathVariable String username) {
 
         if (!loginService.getCurrentUser().getUsername().equals(username)) {
