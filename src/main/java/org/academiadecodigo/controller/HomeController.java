@@ -31,22 +31,16 @@ public class HomeController {
         return new ResponseEntity(HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = {"/home/login"})
+    @RequestMapping(method = RequestMethod.POST, path = {"/home/login"})
     public ResponseEntity doLogIn(@RequestBody SignInDto signInDto) {
 
-        User user = userService.getUser(signInDto.getUsername());
+        boolean authenticate = loginService.authenticate(signInDto.getUsername(), signInDto.getPassword());
 
-        if (user == null) {
-            return new ResponseEntity(HttpStatus.NOT_FOUND);
+        if (authenticate) {
+            return new ResponseEntity(HttpStatus.OK);
         }
 
-        boolean authenticate = loginService.authenticate(user.getUsername(), user.getPassword());
-
-        if (authenticate != true) {
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
-        }
-
-        return new ResponseEntity(HttpStatus.OK);
+        return new ResponseEntity(HttpStatus.BAD_REQUEST);
     }
 
 
