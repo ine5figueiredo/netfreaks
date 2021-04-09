@@ -50,7 +50,8 @@ public class UserController {
     @RequestMapping(method = RequestMethod.GET, path = {"/{username}/", "/{username}"})
     public ResponseEntity<UserDto> profilePage(@PathVariable String username) {
 
-        if (!loginService.getCurrentUser().getUsername().equals(username)) {
+        if (!loginService.getCurrentUser().getUsername().equals(username) ||
+        loginService.getCurrentUser() == null) {
             new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 
