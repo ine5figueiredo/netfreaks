@@ -9,7 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("netfreaks.herokuapp.com")
 public class HomeController {
 
     private LoginService loginService;

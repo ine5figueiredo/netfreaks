@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("netfreaks.herokuapp.com/home")
+@RequestMapping("home")
 public class UserController {
 
     private LoginService loginService;
