@@ -32,7 +32,7 @@ public class HomeController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = {"/home/login"})
-    public ResponseEntity doLogIn(@RequestBody SignInDto signInDto) {
+    public ResponseEntity checkCredentials(@RequestBody SignInDto signInDto) {
 
         boolean authenticate = loginService.authenticate(signInDto.getUsername(), signInDto.getPassword());
 
@@ -43,5 +43,10 @@ public class HomeController {
         return new ResponseEntity(HttpStatus.BAD_REQUEST);
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = {"/home/login"})
+    public ResponseEntity doLogIn() {
+
+        return new ResponseEntity(HttpStatus.OK);
+    }
 
 }
